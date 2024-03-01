@@ -1,5 +1,16 @@
 @import "settings.css";
 
+*
+{
+    margin: 0px;
+
+}
+
+.windows
+{
+    overflow: hidden;
+}
+
 .App
 {
     height: 100dvh;
