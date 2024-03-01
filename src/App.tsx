@@ -1,10 +1,11 @@
 import React from 'react';
+import "./Styles/index.css";
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+	<div className="App">
+
+	</div>
   );
 }
 
