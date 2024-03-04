@@ -15,7 +15,7 @@ export type WindowOptions = {
     
 }
 
-export default function Window({child, wOptions}: {child:ReactNode, wOptions:WindowOptions }) {
+export default function Window({child, wOptions, id, handleWindows}: {child:ReactNode, wOptions:WindowOptions, id:string, handleWindows:any }) {
     
     const [focus, setFocus] = useState<boolean>(false);
 
@@ -40,7 +40,7 @@ export default function Window({child, wOptions}: {child:ReactNode, wOptions:Win
                 <div className="title-bar-controls">
                     <button aria-label="Minimize" />
                     <button aria-label="Maximize" />
-                    <button aria-label="Close" />
+                    <button aria-label="Close" onClick={() => handleWindows(id)} />
                 </div>
             </div>
             <div className="window-body">
