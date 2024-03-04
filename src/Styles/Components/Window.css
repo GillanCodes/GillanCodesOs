@@ -1,0 +1,9 @@
+.window-container
+{
+    height: 100%;
+    width: 100%;
+
+    /* Dev */
+    border: 1px solid purple;
+    box-shadow: 15px 15px 10px black;
+}

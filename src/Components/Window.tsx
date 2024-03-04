@@ -30,14 +30,7 @@ export default function Window({child, wOptions}: {child:ReactNode, wOptions:Win
         }}
         
     >
-        <div 
-            className='window-container'
-            style={{
-                height: "100%",
-                width: "100%",
-                backgroundColor: "red"
-            }}
-        >
+        <div className='window-container'>
             {child}
         </div>
     </Rnd>
