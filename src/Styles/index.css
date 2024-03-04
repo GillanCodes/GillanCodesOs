@@ -1,5 +1,8 @@
 @import "settings.css";
 
+@import "./Components/Window.css";
+
+
 *
 {
     margin: 0px;

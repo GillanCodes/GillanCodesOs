@@ -1,19 +1,14 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import "./Styles/index.css";
-import { Rnd } from 'react-rnd';
+import Window from './Components/Window';
 
 function App() {
+
+  const test:ReactNode = <div><p>Test</p></div>;
+
   return (
 	<div className="App">
-		<Rnd className='windows'
-      bounds="window"
-      maxHeight={450}
-      maxWidth={450}
-      minHeight={200}
-      minWidth={200}
-    >
-      <div style={{height: "100%", width:"100%", backgroundColor:"black"}}></div>
-    </Rnd>
+    <Window child={test} />
 	</div>
   );
 }
