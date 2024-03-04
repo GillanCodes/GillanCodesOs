@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, useState } from 'react'
 import { Rnd } from 'react-rnd'
 
 import '98.css';
@@ -17,6 +17,8 @@ export type WindowOptions = {
 
 export default function Window({child, wOptions}: {child:ReactNode, wOptions:WindowOptions }) {
     
+    const [focus, setFocus] = useState<boolean>(false);
+
     return (
     <Rnd
         bounds="window"
@@ -32,8 +34,8 @@ export default function Window({child, wOptions}: {child:ReactNode, wOptions:Win
         }}
         
     >
-        <div className='window window-container'>
-            <div className="title-bar">
+        <div className='window window-container' onMouseEnter={() => setFocus(true)} onMouseLeave={() => setFocus(false)}>
+            <div className={`title-bar ${focus ? "" : "inactive"}`}>
                 <div className="title-bar-text">Counter</div>
                 <div className="title-bar-controls">
                     <button aria-label="Minimize" />
