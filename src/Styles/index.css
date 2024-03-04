@@ -19,5 +19,7 @@
     height: 100dvh;
     width: 100dvw;
 
+    background-color: #008080;
+
     overflow: hidden;
 }
