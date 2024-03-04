@@ -1,17 +1,33 @@
 import React, { ReactNode } from 'react'
 import { Rnd } from 'react-rnd'
 
-export default function Window({child}: {child:ReactNode}) {
+export type WindowOptions = {
+    x:number
+    y:number
+    height: number,
+    width: number,
+    maxHeight: number,
+    minHeight: number,
+    maxWidth: number,
+    minWidth:number
     
-    const defaultSize = {x: 200, y: 200};
+}
 
+export default function Window({child, wOptions}: {child:ReactNode, wOptions:WindowOptions }) {
+    
     return (
     <Rnd
         bounds="window"
-        maxHeight={400}
-        maxWidth={400}
-        minHeight={defaultSize.y}
-        minWidth={defaultSize.x}
+        maxHeight={wOptions.maxHeight}
+        maxWidth={wOptions.maxWidth}
+        minHeight={wOptions.minHeight}
+        minWidth={wOptions.minWidth}
+        default={{
+            width: wOptions.width,
+            height: wOptions.height,
+            x: wOptions.x,
+            y: wOptions.y
+        }}
         
     >
         <div 
@@ -19,8 +35,6 @@ export default function Window({child}: {child:ReactNode}) {
             style={{
                 height: "100%",
                 width: "100%",
-                minHeight:defaultSize.y,
-                minWidth: defaultSize.x,
                 backgroundColor: "red"
             }}
         >
