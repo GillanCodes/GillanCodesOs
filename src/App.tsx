@@ -7,6 +7,7 @@ function App() {
 
   const test:ReactNode = <div><p>Test</p></div>;
   const [wState, setwState] = useState(["default"]);
+  const [focused, setFocused] = useState<string>('');
 
   const handleWindows = (id:string) => {
     
@@ -45,12 +46,12 @@ function App() {
   return (
 	<div className="App">
     
-    <DesktopIcon options={{title:"Test1", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"a"}} />
-    <DesktopIcon options={{title:"Test2", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"b"}}/>
-    <DesktopIcon options={{title:"Test3", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"c"}}/>
-    <DesktopIcon options={{title:"Test4", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"d"}}/>
-    <DesktopIcon options={{title:"Test5", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"e"}}/>
-    <DesktopIcon options={{title:"Test6", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"f"}}/>
+    <DesktopIcon focused={focused} setFocused={setFocused} options={{title:"Test1", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"a"}} />
+    <DesktopIcon focused={focused} setFocused={setFocused} options={{title:"Test2", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"b"}}/>
+    <DesktopIcon focused={focused} setFocused={setFocused} options={{title:"Test3", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"c"}}/>
+    <DesktopIcon focused={focused} setFocused={setFocused} options={{title:"Test4", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"d"}}/>
+    <DesktopIcon focused={focused} setFocused={setFocused} options={{title:"Test5", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"e"}}/>
+    <DesktopIcon focused={focused} setFocused={setFocused} options={{title:"Test6", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"f"}}/>
 
     
     <button onClick={() => handleWindows("test")}></button>

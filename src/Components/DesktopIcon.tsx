@@ -6,28 +6,10 @@ export type TDI = {
   id:string
 }
 
-export default function DesktopIcon({options}: {options:TDI}) {
-
-  const [focused, setFocused] = useState(false);
-
-  const test = (e:any) => {
-   
-    console.log(e)
-
-    // const els = document.getElementsByClassName('focused');
-    // for (let index = 0; index < els.length; index++) {
-    //   els[index].classList.remove('focused');
-    //   if (focused) setFocused(false);
-    // }
-    
-    
-    // if (!focused) setFocused(true)
-    
-    // console.log(focused)
-  }
+export default function DesktopIcon({options, focused, setFocused}: {options:TDI, focused:any, setFocused:any}) {
 
   return (
-    <div className={`desktop-icon ${focused ? "focused" : ""}`} draggable="true" id={options.id}>
+    <div className={`desktop-icon ${focused == options.id ? "focused" : ""}`} draggable="true" onClick={() => setFocused(options.id)}>
         <img src={options.icon} alt="d-icon" className='d-icon' />
         <p className="title">{options.title}</p>
     </div>
