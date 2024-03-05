@@ -15,7 +15,7 @@ export type WindowOptions = {
     
 }
 
-export default function Window({child, wOptions, id, handleWindows}: {child:ReactNode, wOptions:WindowOptions, id:string, handleWindows:any }) {
+export default function Window({child, title, wOptions, id, handleWindows}: {child:ReactNode, title:string, wOptions:WindowOptions, id:string, handleWindows:any }) {
     
     const [focus, setFocus] = useState<boolean>(false);
 
@@ -32,11 +32,12 @@ export default function Window({child, wOptions, id, handleWindows}: {child:Reac
             x: wOptions.x,
             y: wOptions.y
         }}
+        style={{paddingRight: "10px"}}
         
     >
         <div className='window window-container' onMouseEnter={() => setFocus(true)} onMouseLeave={() => setFocus(false)}>
             <div className={`title-bar ${focus ? "" : "inactive"}`}>
-                <div className="title-bar-text">Counter</div>
+                <div className="title-bar-text">{title}</div>
                 <div className="title-bar-controls">
                     <button aria-label="Minimize" />
                     <button aria-label="Maximize" />
