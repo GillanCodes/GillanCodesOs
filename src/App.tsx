@@ -1,11 +1,11 @@
 import React, { ReactNode, useEffect, useState } from 'react';
 import "./Styles/index.css";
 import Window, { WindowOptions } from './Components/Window';
+import DesktopIcon from './Components/DesktopIcon';
 
 function App() {
 
   const test:ReactNode = <div><p>Test</p></div>;
-
   const [wState, setwState] = useState(["default"]);
 
   const handleWindows = (id:string) => {
@@ -30,20 +30,35 @@ function App() {
     x: 100,
     y: 100
   }
+  
+  const frameop:WindowOptions = {
+    height: 500,
+    width:500,
+    maxHeight: 900,
+    maxWidth: 1900,
+    minHeight: 400,
+    minWidth: 400,
+    x: 100,
+    y: 100
+  }
 
   return (
 	<div className="App">
     
+    <DesktopIcon options={{title:"Test1", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"a"}} />
+    <DesktopIcon options={{title:"Test2", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"b"}}/>
+    <DesktopIcon options={{title:"Test3", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"c"}}/>
+    <DesktopIcon options={{title:"Test4", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"d"}}/>
+    <DesktopIcon options={{title:"Test5", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"e"}}/>
+    <DesktopIcon options={{title:"Test6", icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", id:"f"}}/>
+
+    
     <button onClick={() => handleWindows("test")}></button>
-    <button onClick={() => handleWindows("test2")}></button>
     
     {wState.includes("test") && (
-      <Window child={test} wOptions={wop} id={"test"} handleWindows={handleWindows} />
+      <Window child={test} title={"test1"} wOptions={wop} id={"test"} handleWindows={handleWindows} />
     )}
-    
-    {wState.includes("test2") && (
-      <Window child={test} wOptions={wop} id={"test2"} handleWindows={handleWindows} />
-    )}
+  
 
 
 	</div>
