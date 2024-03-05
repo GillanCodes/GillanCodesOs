@@ -9,6 +9,8 @@
     flex-direction: column;
 
     margin: 5px;
+    box-sizing: border-box;
+    cursor: default;
 }
 
 .desktop-icon.focused
