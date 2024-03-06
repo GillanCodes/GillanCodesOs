@@ -95,6 +95,9 @@ function App() {
       )}
     
 
+      <div className="start-bar">
+        <button>Start</button>
+      </div>
 
     </div>
   );
