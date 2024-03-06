@@ -6,7 +6,6 @@ import Test, { tOp } from './Components/Windows/Test';
 
 function App() {
 
-  const test:ReactNode = <div><p>Test</p></div>;
   const [wState, setwState] = useState(["default"]);
   const [focused, setFocused] = useState<string>('');
 
@@ -20,7 +19,13 @@ function App() {
     {
       setwState([...wState, id]);
     };
+
+    clearSelection();
   } 
+
+  const clearSelection = () => {
+    setFocused('');
+  }
 
   return (
     <div className="App">
@@ -37,6 +42,47 @@ function App() {
           }
         }
       />
+      
+      <DesktopIcon 
+        click={null} 
+        focused={focused} 
+        setFocused={setFocused} 
+        options={
+          {
+            title:"My Documents", 
+            icon:`/icons/mydocs.png`, 
+            id:"mydocs"
+          }
+        }
+      />
+      
+      <DesktopIcon 
+        click={null} 
+        focused={focused} 
+        setFocused={setFocused} 
+        options={
+          {
+            title:"GillanCodes Explorer", 
+            icon:`/icons/world.png`, 
+            id:"gcexp"
+          }
+        }
+      />
+      
+      <DesktopIcon 
+        click={null} 
+        focused={focused} 
+        setFocused={setFocused} 
+        options={
+          {
+            title:"Recycle Bin", 
+            icon:`/icons/recycle_bin.png`, 
+            id:"trash"
+          }
+        }
+      />
+      
+
       
       {wState.includes("test") && (
         <Window 
