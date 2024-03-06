@@ -24,22 +24,28 @@ function App() {
 
   return (
     <div className="App">
-      
+           
       <DesktopIcon 
-        click={() => handleWindows("test")} 
+        click={null} 
         focused={focused} 
         setFocused={setFocused} 
         options={
           {
-            title:"Test1", 
-            icon:"https://win98icons.alexmeub.com/icons/png/computer_explorer_cool-5.png", 
-            id:"a"
+            title:"My Computer", 
+            icon:`/icons/computer_explorer.png`, 
+            id:"mycomputer"
           }
         }
       />
       
       {wState.includes("test") && (
-        <Window child={<Test />} title={"test1"} wOptions={tOp} id={"test"} handleWindows={handleWindows} />
+        <Window 
+          child={<Test />} 
+          title={"test1"} 
+          wOptions={tOp} 
+          id={"test"} 
+          handleWindows={handleWindows} 
+        />
       )}
     
 
