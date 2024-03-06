@@ -2,7 +2,7 @@ import React, { ReactNode, useEffect, useState } from 'react';
 import "./Styles/index.css";
 import Window, { WindowOptions } from './Components/Window';
 import DesktopIcon from './Components/DesktopIcon';
-import Test, { tOp } from './Components/Windows/Test';
+import MyComputer, { McOp } from './Components/Windows/MyComputer';
 
 function App() {
 
@@ -31,7 +31,7 @@ function App() {
     <div className="App">
            
       <DesktopIcon 
-        click={null} 
+        click={() => handleWindows("mycomputer")} 
         focused={focused} 
         setFocused={setFocused} 
         options={
@@ -83,13 +83,13 @@ function App() {
       />
       
 
-      
-      {wState.includes("test") && (
+
+      {wState.includes("mycomputer") && (
         <Window 
-          child={<Test />} 
-          title={"test1"} 
-          wOptions={tOp} 
-          id={"test"} 
+          child={<MyComputer />} 
+          title={"My Computer"} 
+          wOptions={McOp} 
+          id={"mycomputer"} 
           handleWindows={handleWindows} 
         />
       )}
