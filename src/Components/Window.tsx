@@ -44,9 +44,7 @@ export default function Window({child, title, wOptions, id, handleWindows}: {chi
                     <button aria-label="Close" onClick={() => handleWindows(id)} />
                 </div>
             </div>
-            <div className="window-body">
-                {child}
-            </div>
+            {child}
         </div>
     </Rnd>
   )
