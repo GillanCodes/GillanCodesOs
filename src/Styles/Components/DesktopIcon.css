@@ -15,7 +15,7 @@
 
 .desktop-icon.focused
 {
-    border: 1px black dashed;
+    border: 1px #222 dashed;
 }
 
 .desktop-icon .d-icon
