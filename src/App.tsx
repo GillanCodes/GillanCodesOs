@@ -3,6 +3,7 @@ import "./Styles/index.css";
 import Window, { WindowOptions } from './Components/Window';
 import DesktopIcon from './Components/DesktopIcon';
 import MyComputer, { McOp } from './Components/Windows/MyComputer';
+import MyProjects, { MpOp } from './Components/Windows/MyProjects';
 
 function App() {
 
@@ -82,6 +83,21 @@ function App() {
         }
       />
       
+      
+      <DesktopIcon 
+        click={() => handleWindows("projects")} 
+        focused={focused} 
+        setFocused={setFocused} 
+        options={
+          {
+            title:"My Projects", 
+            icon:`/icons/directory.png`, 
+            id:"projects"
+          }
+        }
+      />
+
+      
 
 
       {wState.includes("mycomputer") && (
@@ -90,6 +106,16 @@ function App() {
           title={"My Computer"} 
           wOptions={McOp} 
           id={"mycomputer"} 
+          handleWindows={handleWindows} 
+        />
+      )}
+      
+      {wState.includes("projects") && (
+        <Window 
+          child={<MyProjects />} 
+          title={"My Projects"} 
+          wOptions={MpOp} 
+          id={"projects"} 
           handleWindows={handleWindows} 
         />
       )}
