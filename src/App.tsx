@@ -30,72 +30,74 @@ function App() {
 
   return (
     <div className="App">
-           
-      <DesktopIcon 
-        click={() => handleWindows("mycomputer")} 
-        focused={focused} 
-        setFocused={setFocused} 
-        options={
-          {
-            title:"My Computer", 
-            icon:`/icons/computer_explorer.png`, 
-            id:"mycomputer"
+      <div className="icons">
+        <DesktopIcon 
+          click={() => handleWindows("mycomputer")} 
+          focused={focused} 
+          setFocused={setFocused} 
+          options={
+            {
+              title:"My Computer", 
+              icon:`/icons/computer_explorer.png`, 
+              id:"mycomputer"
+            }
           }
-        }
-      />
-      
-      <DesktopIcon 
-        click={null} 
-        focused={focused} 
-        setFocused={setFocused} 
-        options={
-          {
-            title:"My Documents", 
-            icon:`/icons/mydocs.png`, 
-            id:"mydocs"
+        />
+        
+        <DesktopIcon 
+          click={null} 
+          focused={focused} 
+          setFocused={setFocused} 
+          options={
+            {
+              title:"My Documents", 
+              icon:`/icons/mydocs.png`, 
+              id:"mydocs"
+            }
           }
-        }
-      />
-      
-      <DesktopIcon 
-        click={null} 
-        focused={focused} 
-        setFocused={setFocused} 
-        options={
-          {
-            title:"GillanCodes Explorer", 
-            icon:`/icons/world.png`, 
-            id:"gcexp"
+        />
+        
+        <DesktopIcon 
+          click={null} 
+          focused={focused} 
+          setFocused={setFocused} 
+          options={
+            {
+              title:"GillanCodes Explorer", 
+              icon:`/icons/world.png`, 
+              id:"gcexp"
+            }
           }
-        }
-      />
-      
-      <DesktopIcon 
-        click={null} 
-        focused={focused} 
-        setFocused={setFocused} 
-        options={
-          {
-            title:"Recycle Bin", 
-            icon:`/icons/recycle_bin.png`, 
-            id:"trash"
+        />
+        
+        <DesktopIcon 
+          click={null} 
+          focused={focused} 
+          setFocused={setFocused} 
+          options={
+            {
+              title:"Recycle Bin", 
+              icon:`/icons/recycle_bin.png`, 
+              id:"trash"
+            }
           }
-        }
-      />
-      
-      
-      <DesktopIcon 
-        click={() => handleWindows("projects")} 
-        focused={focused} 
-        setFocused={setFocused} 
-        options={
-          {
-            title:"My Projects", 
-            icon:`/icons/directory.png`, 
-            id:"projects"
+        />
+        
+        
+        <DesktopIcon 
+          click={() => handleWindows("projects")} 
+          focused={focused} 
+          setFocused={setFocused} 
+          options={
+            {
+              title:"My Projects", 
+              icon:`/icons/directory.png`, 
+              id:"projects"
+            }
           }
-        }
-      />
+        />
+      </div>
+      
 
       
 
