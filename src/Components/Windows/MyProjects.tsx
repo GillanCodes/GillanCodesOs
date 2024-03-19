@@ -14,7 +14,7 @@ export const MpOp:WindowOptions = {
 
 export default function MyProjects() {
   return (
-    <div className='window'>
+    <div className='window-body'>
         Projects
     </div>
   )

@@ -14,7 +14,7 @@ export const McOp:WindowOptions = {
 
 export default function MyComputer() {
   return (
-    <div>
+    <div className='window-body'>
         <menu role='tablist'>
             <li role='tab'><a href='#'>General</a></li>
             <li role='tab'><a href='#'>Devices</a></li>

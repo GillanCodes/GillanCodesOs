@@ -13,6 +13,6 @@ export const tOp:WindowOptions = {
 
 export default function Test() {
   return (
-    <div>Test</div>
+    <div className="window-body">Test</div>
   )
 }

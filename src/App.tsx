@@ -109,10 +109,9 @@ function App() {
             }
           }
         />
-      </div>
-      
 
-      
+
+      </div>  
 
 
       {wState.includes("mycomputer") && (
