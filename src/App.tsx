@@ -96,6 +96,19 @@ function App() {
             }
           }
         />
+        
+        <DesktopIcon 
+          click={null} 
+          focused={focused} 
+          setFocused={setFocused} 
+          options={
+            {
+              title:"Discord", 
+              icon:`/icons/discord.png`, 
+              id:"discord"
+            }
+          }
+        />
       </div>
       
 
