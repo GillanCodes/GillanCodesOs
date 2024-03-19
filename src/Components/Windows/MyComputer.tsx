@@ -8,9 +8,11 @@ export const McOp:WindowOptions = {
     maxWidth: 600,
     minHeight: 400,
     minWidth: 400,
-    x: 100,
-    y: 100
+    x: 200,
+    y: 50
 }
+
+var age = new Date(Date.now()).getFullYear() - 2003;
 
 export default function MyComputer() {
   return (
@@ -22,7 +24,7 @@ export default function MyComputer() {
         </menu>
         <div className="window" role='tabpanel'>
             <div className="window-body">
-                <p>TABS</p>
+                <p>{age}</p>
             </div>
         </div>
     </div>
