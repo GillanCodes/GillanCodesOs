@@ -7,7 +7,7 @@ import MyProjects, { MpOp } from './Components/Windows/MyProjects';
 
 function App() {
 
-  const [wState, setwState] = useState(["default"]);
+  const [wState, setwState] = useState(["mycomputer"]);
   const [focused, setFocused] = useState<string>('');
 
   const handleWindows = (id:string) => {
