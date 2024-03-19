@@ -1,0 +1,14 @@
+#mycomputer .pres
+{
+    font-size: 16px;
+    font-weight: 600;    
+}
+
+#mycomputer p {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px;
+}
