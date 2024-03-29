@@ -1,6 +1,10 @@
 .projects-container
 {
 
+    overflow: scroll;
+
+    height: 100%;
+
     .title
     {
         font-size: 28px;
@@ -19,8 +23,9 @@
         .cards
         {
             display: flex;
-            justify-content: left;
+            justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
 
             width: 90%;
         }

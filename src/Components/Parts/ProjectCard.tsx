@@ -14,7 +14,17 @@ export interface IProject
 export default function ProjectCard({}) {
   return (
     <div className='project-card'>
-bite
+        <div className="project-card-container">
+            <div className="project-card-head">
+
+            </div>
+            <div className="project-card-body">
+
+            </div>
+            <div className="project-card-footer">
+                
+            </div>
+        </div>
     </div>
   )
 }
