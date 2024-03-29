@@ -1,6 +1,8 @@
 .project-card
 {
 
+    font-family: Arial, Helvetica, sans-serif;
+
     width: 250px;
     height: 300px;
 
@@ -13,6 +15,63 @@
         margin: 10px;
 
         height: calc(100% - 20px);
+
+        .project-card-head
+        {
+
+            display: flex;
+            align-items: center;
+
+            .icon
+            {
+                height: 64px;
+                width: 64px;
+                object-fit: contain;
+            }
+
+            .project-title
+            {
+                font-size: 20px;
+                font-weight: 600;
+                margin-left: 10px;
+            }
+
+            .project-title.clickable
+            {
+                text-decoration: underline;
+                color: black;
+            }
+        }
+
+        .project-card-body
+        {
+            margin: 10px 0px;
+            height: 170px;
+            font-size: 16px;
+        }
+
+        .project-card-footer
+        {
+            .tags
+            {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+
+                .tag
+                {
+                    padding: 5px;
+                    margin: 0px 5px;
+                    font-size: 12px;
+                }
+
+                .tag.yellow { background-color: yellow; }
+                .tag.blue { background-color: blue; color: white; }
+                .tag.red { background-color: red; color: white; }
+                .tag.green { background-color: green; color: white; }
+                .tag.purple { background-color: purple; color: white; }
+            }
+        }
     }
 
 }

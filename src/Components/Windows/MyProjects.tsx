@@ -1,6 +1,6 @@
 import React from 'react'
 import { WindowOptions } from '../Window'
-import ProjectCard from '../Parts/ProjectCard'
+import ProjectCard, { IProject } from '../Parts/ProjectCard'
 
 export const MpOp:WindowOptions = {
     height: 500,
@@ -13,6 +13,47 @@ export const MpOp:WindowOptions = {
     y: 320
 }
 
+const data:IProject = {
+  id: "test",
+  desc: "This a a test",
+  icon: "https://cdn.buymeacoffee.com/uploads/profile_pictures/2023/11/uiAClRMyEt5sAt2e.png@300w_0e.webp",
+  name: "Test",
+  year: "2028",
+  tags: [
+    {
+      'name': "test",
+      "color" : "red",
+    },
+    {
+      'name': "test2",
+      "color": "yellow"
+    }
+  ]
+}
+
+const data1:IProject = {
+  id: "test",
+  desc: "This a a test",
+  icon: "https://cdn.buymeacoffee.com/uploads/profile_pictures/2023/11/uiAClRMyEt5sAt2e.png@300w_0e.webp",
+  name: "Test",
+  link: "http://google.com/",
+  year: "2028",
+  tags: [
+      {
+        'name': "test",
+        "color" : "purple",
+      },
+      {
+        'name': "test2",
+        "color": "green"
+      },
+      {
+        "name": "test3",
+        'color': "blue"
+      }
+  ]
+}
+
 export default function MyProjects() {
   return (
     <div className='window-body'>
@@ -20,9 +61,9 @@ export default function MyProjects() {
       <h2 className='title'>My Projects</h2>
         <div className="projects">
           <div className="cards">
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            <ProjectCard data={data} />
+            <ProjectCard data={data1} />
+            <ProjectCard data={data} />
           </div>
         </div>
       </div>
