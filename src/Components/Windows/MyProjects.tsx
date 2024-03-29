@@ -8,8 +8,8 @@ export const MpOp:WindowOptions = {
     maxWidth: 1500,
     minHeight: 400,
     minWidth: 400,
-    x: 100,
-    y: 100
+    x: 300,
+    y: 320
 }
 
 export default function MyProjects() {
