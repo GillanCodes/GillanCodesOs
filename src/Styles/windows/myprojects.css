@@ -1,0 +1,30 @@
+.projects-container
+{
+
+    .title
+    {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .projects
+    {
+        margin-top: 20px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        .cards
+        {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            width: 90%;
+        }
+
+    }
+
+}

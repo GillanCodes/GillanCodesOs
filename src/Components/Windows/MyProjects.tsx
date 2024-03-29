@@ -1,5 +1,6 @@
 import React from 'react'
 import { WindowOptions } from '../Window'
+import ProjectCard from '../Parts/ProjectCard'
 
 export const MpOp:WindowOptions = {
     height: 500,
@@ -15,7 +16,16 @@ export const MpOp:WindowOptions = {
 export default function MyProjects() {
   return (
     <div className='window-body'>
-        Projects
+      <div className="projects-container">
+      <h2 className='title'>My Projects</h2>
+        <div className="projects">
+          <div className="cards">
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
