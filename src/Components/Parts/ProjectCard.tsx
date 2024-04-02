@@ -22,7 +22,7 @@ export default function ProjectCard({data} : {data:IProject}) {
     <div className='project-card'>
         <div className="project-card-container">
             <div className="project-card-head">
-                <img src={data.icon} alt="Icon" className='icon' />
+                <img src={`${process.env.PUBLIC_URL}/icons/projects/${data.icon}`} alt="Icon" className='icon' />
                 {data.link ? <a className='project-title clickable' href={data.link} target='_BLANK'>{data.name}</a> : <p className='project-title'>{data.name}</p>}
             </div>
             <div className="project-card-body">
