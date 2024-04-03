@@ -16,7 +16,7 @@ export const MpOp:WindowOptions = {
 const sg:IProject = {
   id: "sg",
   name: "Stardew Generator",
-  desc: "A small website to generate stardew valley name, farm name and favorite thing !",
+  desc: "A small website that generates \"Stardew Valley\" player name, farm's name and favorite thing !",
   icon: "sg.png",
   year: "2024",
   tags: [
@@ -34,7 +34,7 @@ const sg:IProject = {
 const RTB:IProject = {
   id: "RTB",
   name: "Rev'TonBac",
-  desc: "Un site et une application qui aide les étudiant(e)s dans leur quotidient, avec la possiblité de créer des fiches ou quizz de révisions. Le but est de réduire le stress des examens !",
+  desc: "A site and an application that helps students in thier daily lives, with the possibility of creating revision sheets or quizzes. The main purpose is to reduce exam stress.",
   icon: "rtb.png",
   year: "2020 - 2022",
   tags: [
@@ -56,7 +56,7 @@ const RTB:IProject = {
 const waldes:IProject = {
   id: "Waldes",
   name: "Wokipédia",
-  desc: "Developpeur bénévole pour le serveur GTARP \"GLife\". Un bot discord dans le but de prendre des demandes d'aide/commerces/recrutements.",
+  desc: "Volunteer developper for a GTARP server called \"GLife\". Waldes is a discord bot with the aim of taking request for help / business and recruitment.",
   icon: "waldes.png",
   year: "2020",
   tags: [
@@ -74,7 +74,7 @@ const waldes:IProject = {
 const docs:IProject = {
   id: "docs",
   name: "Docs Maker",
-  desc: "Un outils pour les developpeurs que vous pouvez self-host. Ce site permet de créer des documentations de ses APIs / Applications pour éviter de perdre du temps.",
+  desc: "A tool for developpers that you can self-host. The site allows you to create documentation for your APIs / Application to avoid wasting time.",
   icon: "",
   year: "2019",
   tags: [
@@ -97,7 +97,7 @@ const docs:IProject = {
 const wokipedia:IProject = {
   id: "wokipedia",
   name: "Wokipédia",
-  desc: "Bot discord qui intègre des outils de modérations : Channel de Logs / Gestions des Bans & Kicks avec possiblité de mentionné une raison / etc ... Mais également un moyen de gérer ça communauté grace au site web",
+  desc: "Discord bot which integrates moderation tools: Logs Channel / Management of Bans & Kicks with the possibility of mentioning a reason / etc ... But also a way to manage this community thanks to the website",
   icon: "wokipedia.png",
   year: "2017",
   tags: [
@@ -120,7 +120,7 @@ const wokipedia:IProject = {
 const arkasia:IProject = {
   id: "arksia",
   name: "Arkasia",
-  desc: "Je fais mes débuts dans la programmation et je deviens de façon bénévol, au sein d'un serveur minecraft, développeur JAVA",
+  desc: "I started out in programming and became a JAVA developer on a volunteer basis on a Minecraft server.",
   icon: "arkasia.png",
   year: "2016",
   tags: [
